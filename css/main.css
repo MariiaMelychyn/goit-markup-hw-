@@ -56,19 +56,29 @@
 
      /* Hero */
      .hero{  
-     background-color: #2F303A;
-     padding-top: 200px;
-     padding-bottom: 210px;
+      max-width: 1600px;
+      width: 1600px;
+      height: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      outline: 1px solid black;
+      background: rgba(47, 48, 58, 0.4);
+      background-image: url(../images/images2/Img\(24\).png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
      }
      .section-hero{
-      
+      padding-top: inherit;
       padding-left: 15px;
       padding-right: 15px;
       text-align: center;
      }
 
      /* link */
+     
     .link{
+      
     color: var(--text-color);
     }
     .link:hover{
@@ -93,10 +103,30 @@
        margin-right: 50px;
        display: block;
        padding-top: 32px;
-       padding-bottom: 32px;
-       
+       padding-bottom: 32px; 
     }
-   
+   /* link-footer */
+   .link-footer{
+      
+      color: var(--text-color);
+      }
+      .link-footer:hover{
+      color: var(--accent-color);
+      }
+      .link-footer{
+      
+       color: var(--text-color);
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 1.14;
+       text-decoration: none;
+      }
+         .auth-nav .link-footer + .link-footer{
+         margin-left: 50px;
+         }
+         
+
+
     /*Убираємо точки із ul*/
     ul{
     list-style: none;
@@ -143,7 +173,6 @@
     margin-top: 0;
     margin-bottom: 40px;
     text-align: center;
-    background-color:#2F303A;;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -181,11 +210,114 @@
     font-size: 14px;
     line-height: 2;
     }
-    .item{
-       width: 270px;
-       margin-right: 30px;
-    }
     
+    /* Добавляємо іконки */
+      .item-warning::before{
+         width: 270px;
+         margin-right: 30px;
+         display: block;
+         content: "";
+         height: 120px;
+         background-image: url(../images/icons.svg/icons.svg/antenna1.svg);
+         background-size: contain;  
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: var(--primary-text-color);
+         margin-bottom: 30px;
+      }
+      .item-punctuality::before{
+         width: 270px;
+         margin-right: 30px;
+         display: block;
+         content: "";
+         height: 120px;
+         background-image: url(../images/icons.svg/icons.svg/clock1.svg);
+         background-size: contain;  
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: var(--primary-text-color);
+         margin-bottom: 30px;
+      }
+      .item-plan::before{
+         width: 270px;
+         margin-right: 30px;
+         display: block;
+         content: "";
+         height: 120px;
+         background-image: url(../images/icons.svg/icons.svg/diagram1.svg);
+         background-size: contain;  
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: var(--primary-text-color);
+         margin-bottom: 30px;
+      }
+      .item-technology::before{
+         width: 270px;
+         
+         display: block;
+         content: "";
+         height: 120px;
+         background-image: url(../images/icons.svg/icons.svg/astronaut1.svg);
+         background-size: contain;  
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: var(--primary-text-color);
+         margin-bottom: 30px;
+      }
+     /* добавляэмо в ховер іконку */
+      .link::before{
+         width: 10px;
+         margin-right: 10px;
+         display: block;
+         content: "";
+         height: 16px;
+         background-image: url(../images/icons.svg/icons.svg/envelope\(hover\).svg);
+         background-size: contain;  
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: var(--primary-text-color);
+      }
+      .link.tel::before{
+         width: 10px;
+         margin-right: 10px;
+         display: block;
+         content: "";
+         height: 16px;
+         background-image: url(../images/icons.svg/icons.svg/Vector.svg);
+         background-size: contain;  
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: var(--primary-text-color);
+      }
+      .link::before,
+      .link::after{
+         display: inline-block;
+         content: "";
+         width: 16px;
+         height: 12px;
+      }
+      .link::after{
+         display: none;
+         margin-left: auto;
+         background-image: url(../images/icons.svg/icons.svg/Vector.svg);
+      }
+      .link.tel::before,
+      .link.tel::after{
+         display: inline-block;
+         content: "";
+         width: 10px;
+         height: 16px;
+      }
+      .link.tel::after{
+         display: none;
+         margin-left: auto;
+         background-image: url(../images/icons.svg/icons.svg/Vector.svg);
+      }
+      
+    /* Добавляємо іконки section-comanda */
+    
+
+
     .features li:nth-child(4n){
        margin-right: 0;
     }
@@ -270,7 +402,7 @@
       margin: 0;
       margin-right: 30px;
       padding: 0;
-
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       
     }
     .photo-studio{
@@ -513,6 +645,20 @@ margin-bottom: 50px;
    margin-bottom: 30px;
  }
 
+ .portfolio-element{
+   box-sizing: border-box;
+   width: 370px;
+   border: 1px solid #EEEEEE;
+   background: #FFFFFF;
+   margin-top: 0;
+   margin-top: 0;
+   margin-bottom: 30px;
+   margin-right: 30px;
+   
+ }
+ .portfolio-element:hover{
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
  /*  Встановить стилі нижньої рамки */
  header{
    border-bottom-width: 1px;
@@ -526,3 +672,4 @@ margin-bottom: 50px;
 .container-webstudio{
    padding-bottom: 20px;
 }
+
