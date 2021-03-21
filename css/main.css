@@ -31,7 +31,6 @@
       margin: 0;
    }
     
- 
    
    
     /* WebStudio */
@@ -218,7 +217,7 @@
          display: block;
          content: "";
          height: 120px;
-         background-image: url(../images/icons.svg/icons.svg/antenna1.svg);
+         background-image: url(../images/icons.svg/antenna1.svg);
          background-size: contain;  
          background-repeat: no-repeat;
          background-position: center;
@@ -231,7 +230,7 @@
          display: block;
          content: "";
          height: 120px;
-         background-image: url(../images/icons.svg/icons.svg/clock1.svg);
+         background-image: url(../images/icons.svg/clock1.svg);
          background-size: contain;  
          background-repeat: no-repeat;
          background-position: center;
@@ -244,7 +243,7 @@
          display: block;
          content: "";
          height: 120px;
-         background-image: url(../images/icons.svg/icons.svg/diagram1.svg);
+         background-image: url(../images/icons.svg/diagram1.svg);
          background-size: contain;  
          background-repeat: no-repeat;
          background-position: center;
@@ -257,7 +256,7 @@
          display: block;
          content: "";
          height: 120px;
-         background-image: url(../images/icons.svg/icons.svg/astronaut1.svg);
+         background-image: url(../images/icons.svg/astronaut1.svg);
          background-size: contain;  
          background-repeat: no-repeat;
          background-position: center;
@@ -271,7 +270,7 @@
          display: block;
          content: "";
          height: 16px;
-         background-image: url(../images/icons.svg/icons.svg/envelope\(hover\).svg);
+         background-image: url(../images/icons.svg/convert.svg);
          background-size: contain;  
          background-repeat: no-repeat;
          background-position: center;
@@ -283,7 +282,7 @@
          display: block;
          content: "";
          height: 16px;
-         background-image: url(../images/icons.svg/icons.svg/Vector.svg);
+         background-image: url(../images/icons.svg/Vector.svg);
          background-size: contain;  
          background-repeat: no-repeat;
          background-position: center;
@@ -299,7 +298,7 @@
       .link::after{
          display: none;
          margin-left: auto;
-         background-image: url(../images/icons.svg/icons.svg/Vector.svg);
+         background-image: url(../images/icons.svg/convert.svg);
       }
       .link.tel::before,
       .link.tel::after{
@@ -311,7 +310,7 @@
       .link.tel::after{
          display: none;
          margin-left: auto;
-         background-image: url(../images/icons.svg/icons.svg/Vector.svg);
+         background-image: url(../images/icons.svg/Vector.svg);
       }
       
     /* Добавляємо іконки section-comanda */
@@ -361,6 +360,7 @@
        font-weight: 400;
        font-size: 16px;
        line-height: 1.18;
+       margin-bottom: 16px;
     }
     .photo-studio{
        margin-top: 0;
@@ -673,3 +673,107 @@ margin-bottom: 50px;
    padding-bottom: 20px;
 }
 
+/* постійні клієнти */
+.client{
+   width: 170px;
+   text-align: center;
+   background-color: var(--primary-white-color);
+   margin: 0;
+   margin-right: 30px;
+   padding: 0;
+   border-radius: 4px;
+   box-sizing: border-box;
+   border: 1px solid #AFB1B8;
+   cursor: pointer;
+  
+}
+.regular-customers{
+   display: flex;
+}
+.regular-customers li:nth-child(6n){
+   margin-right: 0;
+}
+
+ /* добавляю соцыальны мережы */
+ .comanda-icon{
+    display: flex;
+    background-position: center;
+ }
+
+ .comanda-instagram{
+   width: 44px;
+   height: 44px;
+   display: block;
+   content: "";
+   background-image: url(../images/icons.svg/instagram.svg);
+   background-color: var(--primary-white-color);
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 50%;
+   margin-bottom: 30px;
+   margin-right: 10px;
+   margin-left: 32px;
+   cursor: pointer;
+}
+
+.comanda-tw{
+   width: 44px;
+   height: 44px;
+   display: block;
+   content: "";
+   background-image: url(../images/icons.svg/Group.svg);
+   background-color: var(--primary-white-color);
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 50%;
+   margin-bottom: 30px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+.comanda-fs{
+   width: 44px;
+   height: 44px;
+   display: block;
+   content: "";
+   background-color: var(--primary-white-color);
+   background-image: url(../images/icons.svg/faceebook.svg);
+   background-size: 10px;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 50%;
+   margin-bottom: 30px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.comanda-in{
+   width: 44px;
+   height: 44px;
+   display: block;
+   content: "";
+   background-image: url(../images/icons.svg/innnnnn.svg);
+   background-color: var(--primary-white-color);
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 50%;
+   margin-bottom: 30px;
+   cursor: pointer;
+}
+
+.comanda-instagram:hover{
+   background-color: var(--accent-color);
+}
+.comanda-tw:hover{
+   background-color: var(--accent-color);
+}
+.comanda-fs:hover{
+   background-color: var(--accent-color);
+}
+.comanda-in:hover{
+   background-color: var(--accent-color);
+}
+
+/* footer присоединяйтесь */
