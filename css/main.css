@@ -673,107 +673,33 @@ margin-bottom: 50px;
    padding-bottom: 20px;
 }
 
-/* постійні клієнти */
-.client{
-   width: 170px;
-   text-align: center;
-   background-color: var(--primary-white-color);
-   margin: 0;
-   margin-right: 30px;
+/* соціальні мережі команди */
+.actions{
+   flex-wrap: wrap;
    padding: 0;
-   border-radius: 4px;
-   box-sizing: border-box;
-   border: 1px solid #AFB1B8;
-   cursor: pointer;
-  
-}
-.regular-customers{
-   display: flex;
-}
-.regular-customers li:nth-child(6n){
-   margin-right: 0;
-}
+   margin: 0; 
+   fill: #212121;
 
- /* добавляю соцыальны мережы */
- .comanda-icon{
-    display: flex;
-    background-position: center;
- }
-
- .comanda-instagram{
+}
+.button-svg{
+   padding: 0;
+   border: 0;
+   width: 100px;
+   height: 100px;
+   color: #212121;
+   border-radius: 50%;
+   background-color: #2196F3;
    width: 44px;
    height: 44px;
    display: block;
    content: "";
-   background-image: url(../images/icons.svg/instagram.svg);
-   background-color: var(--primary-white-color);
-   background-size: 20px;
-   background-repeat: no-repeat;
-   background-position: center;
-   border-radius: 50%;
    margin-bottom: 30px;
    margin-right: 10px;
    margin-left: 32px;
    cursor: pointer;
 }
-
-.comanda-tw{
+.button-icon{
    width: 44px;
    height: 44px;
-   display: block;
-   content: "";
-   background-image: url(../images/icons.svg/Group.svg);
-   background-color: var(--primary-white-color);
-   background-size: 20px;
-   background-repeat: no-repeat;
-   background-position: center;
-   border-radius: 50%;
-   margin-bottom: 30px;
-   margin-right: 10px;
-   cursor: pointer;
+   fill: #212121;
 }
-.comanda-fs{
-   width: 44px;
-   height: 44px;
-   display: block;
-   content: "";
-   background-color: var(--primary-white-color);
-   background-image: url(../images/icons.svg/faceebook.svg);
-   background-size: 10px;
-   background-repeat: no-repeat;
-   background-position: center;
-   border-radius: 50%;
-   margin-bottom: 30px;
-   margin-right: 10px;
-   cursor: pointer;
-}
-
-.comanda-in{
-   width: 44px;
-   height: 44px;
-   display: block;
-   content: "";
-   background-image: url(../images/icons.svg/innnnnn.svg);
-   background-color: var(--primary-white-color);
-   background-size: 20px;
-   background-repeat: no-repeat;
-   background-position: center;
-   border-radius: 50%;
-   margin-bottom: 30px;
-   cursor: pointer;
-}
-
-.comanda-instagram:hover{
-   background-color: var(--accent-color);
-}
-.comanda-tw:hover{
-   background-color: var(--accent-color);
-}
-.comanda-fs:hover{
-   background-color: var(--accent-color);
-}
-.comanda-in:hover{
-   background-color: var(--accent-color);
-}
-
-/* footer присоединяйтесь */
