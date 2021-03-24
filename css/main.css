@@ -643,6 +643,7 @@ margin-bottom: 50px;
    margin-top: 0;
    margin-top: 0;
    margin-bottom: 30px;
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  }
 
  .portfolio-element{
@@ -707,12 +708,10 @@ margin-bottom: 50px;
    fill: #212121;
 }
 /* svg  */
-.batton-icon{
+.regular-customers{
+   display: flex;
    padding: 0;
-   border: 0;
-   width: 100px;
-   height: 100px;
-   color: #212121;
-   border-radius: 50%;
-   background-color: aqua;
+   margin: 0;
+   outline: 1px solid black;
+   list-style: none;
 }
