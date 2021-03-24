@@ -729,3 +729,41 @@ margin-bottom: 50px;
    justify-content: center;
    align-items: center;
 }
+
+/* social */
+.social-list{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.social-item{
+   display: inline-block;
+   margin-bottom: 30px;
+   margin-right: 10px;
+   padding: 0;
+   border: none;
+   width: 44px;
+   height: 44px;
+   color: #212121;
+   border-radius: 50%;
+   background-color: var(--primary-white-color);
+   background-position: center;
+}
+.social-item:hover{
+   background-color: var(--accent-color);
+}
+.social-one{
+   margin-top: 12px;
+   fill: #AFB1B8;
+}
+.social-one:hover{
+   fill: var(--primary-white-color);
+   
+}
+
+
+.social{
+   justify-content: center;
+   
+}
