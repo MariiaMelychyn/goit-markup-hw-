@@ -767,23 +767,21 @@ margin-bottom: 50px;
 
 
 /* footer-social */
-
-.footer-social{
-  flex-wrap: wrap;
+.footer{
+   
+   display: flex;
+   align-items: baseline;
+}
+.general{
+   display: flex;
   
-}
-.webstudio{
- width: 1200px;
- align-items: center;
- margin: auto;
-}
-.new-footer{
-   align-items: baseline;
+   width: 1200px;
+   padding-left: 15px;
    padding-right: 15px;
+   margin: auto;
    align-items: baseline;
-   justify-content: flex-start;
-   align-items: flex-start;
 }
+
 .connect{
    color: var(--primary-white-color);
    margin-top: 0;
@@ -793,20 +791,12 @@ margin-bottom: 50px;
    line-height: 1.17;
 }
 .container-new{
+
    width: 1200px;
  align-items: center;
- margin: auto;
+ margin-right: 70px;
 }
-.container-too{
-   width: 1200px;
- align-items: center;
- margin: auto;
-}
-.footer{
-   flex-wrap: wrap;
-   align-items: baseline;
-   justify-content: space-between;
-}
+
 /* футер 2 частина */
 .social-list-footer{
    display: inline-flex;
