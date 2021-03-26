@@ -231,11 +231,9 @@
         width: 270px;
         margin-right: 30px;
         content: "";
-
         display: block;
         height: 120px;
         background-image: url(../images/icons.svg/antenna\(1\).svg);
-        
         background-repeat: no-repeat;
         background-position: center;
         background-color: var(--primary-text-color);
@@ -247,10 +245,8 @@
         width: 270px;
         margin-right: 30px;
         display: block;
-        
         height: 120px;
         background-image: url(../images/icons.svg/clock\(1\).svg);
-       
         background-repeat: no-repeat;
         background-position: center;
         background-color: var(--primary-text-color);
@@ -261,10 +257,8 @@
         width: 270px;
         margin-right: 30px;
         display: block;
-        
         height: 120px;
         background-image: url(../images/icons.svg/diagram\(1\).svg);
-       
         background-repeat: no-repeat;
         background-position: center;
         background-color: var(--primary-text-color);
@@ -284,12 +278,9 @@
         background-color: var(--primary-text-color);
         margin-bottom: 30px;
      }
-    /* добавляэмо в ховер іконку */
      
      
-   /* Добавляємо іконки section-comanda */
    
-
 
    .features li:nth-child(4n){
       margin-right: 0;
