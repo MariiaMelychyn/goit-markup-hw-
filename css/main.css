@@ -741,6 +741,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
 }
 .social-item{
@@ -756,26 +757,26 @@ header{
   background-color: var(--primary-white-color);
   background-position: center;
 }
-.social-item:hover,
-.social-item:focus{
-  background-color: var(--accent-color);
+.social:hover .social-one,
+.social:focus .social-one{
+  fill: var(--primary-white-color);
 }
 .social-one{
   margin-top: 12px;
   fill: #AFB1B8;
 }
-.social-one:hover,
-.social-one:focus{
-  fill: var(--primary-white-color);
-  }
 
-
+.social:hover,
+.social:focus{
+  background-color: var(--accent-color);
+}
 .social{
   display: block;
   justify-content: center;
   width: 44px;
   height: 44px;
-  
+  border-radius: 50%;
+ 
   
 }
 
