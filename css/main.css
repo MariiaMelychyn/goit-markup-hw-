@@ -163,10 +163,7 @@
      
      color: var(--text-color);
      }
-     .link-footer:hover,
-     .link-footer:focus{
-     color: var(--accent-color);
-     }
+     
      .link-footer{
      
       color: var(--text-color);
@@ -175,6 +172,7 @@
       line-height: 1.14;
       text-decoration: none;
      }
+     
         .auth-nav .link-footer + .link-footer{
         margin-left: 50px;
         }
@@ -454,12 +452,11 @@
    font-size: 16px;
     line-height: 1.87;
    }
-   .button:hover{
-       color:var(--accent-color);
-   }
+   .button:hover,
    .button:focus{
-      color: #F5F4FA;
+       background-color:var(--accent-color);
    }
+   
 
    /*button-portfolio */
    .button-portfolio{
@@ -907,11 +904,15 @@ margin-right: 70px;
   margin-top: 12px;
   margin-left: 12px;
   fill: var(--primary-white-color);
-  background-position: center;
+ 
 }
 
 .social-footer-href{
+  display: block;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 .container-new .container-too{
   display: flex;
