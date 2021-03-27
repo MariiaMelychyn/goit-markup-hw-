@@ -59,10 +59,14 @@
        margin-right: 10px;
        stroke: #757575;
     }
-    .auth-nav:hover .telephone{
-       stroke: var(--accent-color);
-    }
-
+    
+    .auth-nav .telephone-one{
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+      stroke: #757575;
+   }
+   
     /* Hero */
     .hero{  
      max-width: 1600px;
@@ -86,16 +90,35 @@
 
     /* link */
     
-   .link{
-     
+   .link{   
    color: var(--text-color);
+   }
+   .link-tel{
+    color: var(--text-color);
    }
    .link:hover,
    .link:focus{
-   color: var(--accent-color);
+     color: var(--accent-color);
    }
-   .link{
+   .link-tel:hover,
+   .link-tel:focus{
+    color: var(--accent-color);
+   }
    
+   .link:hover .telephone,
+   .link:focus .telephone{
+     stroke: var(--accent-color);
+   }
+   .link-tel:hover .telephone-one,
+   .link-tel:focus .telephone-one{
+     stroke: var(--accent-color);
+   }
+
+
+    
+   
+
+   .link{
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
@@ -103,6 +126,26 @@
     text-decoration: none;
    }
       .auth-nav .link + .link{
+      margin-left: 50px;
+      }
+      .auth-nav {
+      display: flex;
+      margin-left: auto;
+      }
+      .auth-nav li{
+      margin-right: 50px;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px; 
+   }
+   .link-tel{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+   }
+      .auth-nav .link-tel + .link-tel{
       margin-left: 50px;
       }
       .auth-nav {
@@ -177,7 +220,18 @@
    text-decoration: none;
    display:inline-block;
    }
-
+   .site-nav-stydio:hover,
+   .site-nav-stydio:focus{
+    color: var(--accent-color);
+   }
+   .site-nav-portfolio:hover,
+   .site-nav-portfolio:focus{
+     color: var(--accent-color);
+   }
+   .site-nav-kontactu:hover,
+   .site-nav-kontactu:focus{
+     color: var(--accent-color);
+   }
 
    /* section-glava */
    .section-glava{
@@ -224,59 +278,72 @@
    
    /* Добавляємо іконки */
    
-   
+     .item-warning{
+      margin-right: 30px;
+      margin-bottom: 30px;
+     }
+     .features-title{
+       margin-top: 30px;
+     }
      .item-warning::before{
         content: "";
         display:inline-block;
         width: 270px;
-        margin-right: 30px;
         content: "";
         display: block;
         height: 120px;
         background-image: url(../images/icons.svg/antenna\(1\).svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-color: var(--primary-text-color);
-        margin-bottom: 30px;
+        background-color: var(--primary-text-color);  
+     }
+     .item-punctuality{
+      margin-right: 30px;
+      margin-bottom: 30px;
      }
     
      .item-punctuality::before{
         content: "";
         width: 270px;
-        margin-right: 30px;
+     
         display: block;
         height: 120px;
         background-image: url(../images/icons.svg/clock\(1\).svg);
         background-repeat: no-repeat;
         background-position: center;
         background-color: var(--primary-text-color);
-        margin-bottom: 30px;
+      
      }
      .item-plan::before{
         content: "";
         width: 270px;
-        margin-right: 30px;
+        
         display: block;
         height: 120px;
         background-image: url(../images/icons.svg/diagram\(1\).svg);
         background-repeat: no-repeat;
         background-position: center;
         background-color: var(--primary-text-color);
-        margin-bottom: 30px;
+       
+     }
+     .item-plan{
+      margin-right: 30px;
+      margin-bottom: 30px;
      }
      .item-technology::before{
         content: "";
         width: 270px;
-        
         display: block;
-        
         height: 120px;
         background-image: url(../images/icons.svg/astronaut\(1\).svg);
-     
         background-repeat: no-repeat;
         background-position: center;
         background-color: var(--primary-text-color);
-        margin-bottom: 30px;
+   
+     }
+     .item-technology{
+      margin-right: 30px;
+      margin-bottom: 30px;
      }
      
      
@@ -830,6 +897,10 @@ margin-right: 70px;
 }
 .social-item-footer:hover,
 .social-item-footer:focus{
+  background-color: var(--accent-color);
+}
+.social-footer-href:hover,
+.social-footer-href:focus{
   background-color: var(--accent-color);
 }
 .social-one-footer{
